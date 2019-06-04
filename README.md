@@ -10,7 +10,15 @@ Interact with a UniFi controller.
 Uses the JSON interface on port 8443 (HTTPS) to communicate with a UniFi controller. Operations will raise unifi.controller.APIError on obvious problems (such as login failure), but many errors (such as disconnecting a nonexistant client) will go unreported.
 __init__(self, host, username, password)
 
-Create a Controller object.
+
+API Example
+-----------
+
+```python
+from unifi.controller import Controller
+c = Controller('192.168.1.99', 'admin', 'p4ssw0rd')
+
+```
 
     host	-- the address of the controller host; IP or name
     username	-- the username to log in with
