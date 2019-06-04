@@ -4,10 +4,6 @@ Api Client For Connect to Unifi Controller and Send Auth Requests
 
 class Controller
 
-from pyunifi.controller import Controller
-c = Controller('192.168.1.99', 'admin', 'p4ssw0rd')
-for ap in c.get_aps():
-	print 'AP named %s with MAC %s' % (ap.get('name'), ap['mac'])
 
 Interact with a UniFi controller.
 
