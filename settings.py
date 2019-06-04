@@ -1,0 +1,7 @@
+import os
+
+CONNECTION_EXPIRATION = 10
+UNIFI_HOST = os.environ.get('UNIFI_HOST')
+UNIFI_USERNAME = os.environ.get('UNIFI_USERNAME')
+UNIFI_PASSWORD = os.environ.get('UNIFI_PASSWORD')
+UNIFI_SITE_ID = os.environ.get('UNIFI_SITE_ID')
