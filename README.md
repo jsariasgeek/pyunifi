@@ -19,3 +19,6 @@ Create a Controller object.
     version	-- the base version of the controller API [v4|v5]
     site_id	-- the site ID to access
     ssl_verify	-- Verify the controllers SSL certificate, default=True, can also be False or "path/to/custom_cert.pem"
+
+
+This Repo is based on https://github.com/finish06/pyunifi. 
