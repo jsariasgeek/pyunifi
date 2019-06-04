@@ -29,4 +29,16 @@ c = Controller('192.168.1.99', 'admin', 'p4ssw0rd')
     ssl_verify	-- Verify the controllers SSL certificate, default=True, can also be False or "path/to/custom_cert.pem"
 
 
+### `authorize_guest(self, guest_mac, minutes, up_bandwidth=None, down_bandwidth=None, byte_quota=None, ap_mac=None)`
+
+Authorize a guest based on his MAC address.
+
+   - `guest_mac`     -- the guest MAC address : aa:bb:cc:dd:ee:ff
+   - `minutes`      -- duration of the authorization in minutes
+   - `up_bandwith`  -- up speed allowed in kbps (optional)
+   - `down_bandwith` -- down speed allowed in kbps (optional)
+   - `byte_quota`    -- quantity of bytes allowed in MB (optional)
+   - `ap_mac`        -- access point MAC address (UniFi >= 3.x) (optional)
+   
+
 This Repo is based on https://github.com/finish06/pyunifi. 
