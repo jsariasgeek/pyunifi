@@ -1,5 +1,5 @@
 # pyunifi
-Api Client For Connect to Unifi Controller and Send Auth Requests
+Api Client For Connect to Unifi Controller and Send Auth Requests. Receive JSON data in a POST request with the info for authenticate the user. The POST receives (mac_address, access_point, site_id) for authenticate user.
 
 
 class Controller
